@@ -1,0 +1,838 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+h1, h2 {
+    color: #333333;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+    font-family: 微软雅黑;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: #fff;
+}
+
+.scrollTop {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.scrollTop .nav-item .active {
+    color: #0188fb;
+    border-bottom-color: #0188fb;
+}
+
+.scrollTop .nav-item .active {
+    color: #0188fb;
+}
+
+.scrollTop .nav a {
+    color: #333;
+}
+
+.header .h-inner {
+    position: relative;
+    /* width: 76.875%; */
+    width: 914px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    width: 176px;
+    height: 45px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 3;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/logo2.png') no-repeat 0 0;
+    background-size: 176px 45px;
+}
+
+.logo1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/logo1.png') no-repeat 0 0;
+    background-size: 176px 45px;
+}
+
+.header .nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    /* overflow: hidden; */
+    font-size: 24px;
+}
+
+.nav-ul {
+    text-align: center;
+    width: 100%;
+    font-size: 0;
+}
+
+.nav-item {
+    padding: 0 38px;
+    display: inline-block;
+    height: 54px;
+}
+
+.nav-item .active {
+    border-bottom-color: #f5f5f5;
+}
+
+.nav-item a {
+    font-size: 18px;
+    display: inline-block;
+    line-height: 54px;
+    height: 50px;
+    padding: 0 16px;
+    border-bottom: 4px solid transparent;
+}
+
+.nav a {
+    /* color: #777777; */
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    /* border-bottom-color: #f5f5f5; */
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.section1 {
+    position: relative;
+}
+
+.section1 > .content-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section1 > .content-box > .content {
+    position: absolute;
+    width: 510px;
+    right: 60%;
+    text-align: center;
+    top: 60%;
+    color: #fff;
+    transition: all 2s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.section1 > .video-md {
+    position: absolute;
+    width: calc(100% * 135 / 1920);
+    height: calc(100% * 271.25 / 747.75);
+    left: calc(100% * 973.5 / 1920);
+    bottom: calc(100% * 94.5 / 747.75);
+}
+
+.section1 > .video-pc {
+    position: absolute;
+    width: calc(100% * 469.5 / 1920);
+    height: calc(100% * 375.75 / 747.75);
+    left: calc(100% * 1139.25 / 1920);
+    bottom: calc(100% * 198 / 747.75);
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.show > .content-box > .content {
+    top: 30%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.section1 > .content-box > .content h1 {
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+
+.section1 > .content-box > .content p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.section1 .button-box {
+    padding-top: 40px
+}
+
+.section1 .button-box > div {
+    cursor: pointer;
+    color: #426cbc;
+    font-size: 24px;
+    line-height: 68px;
+    display: inline-block;
+    position: relative;
+    width: 310px;
+    height: 68px;
+    border-radius: 34px;
+    background-color: #fff;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.section1 .button-box > div div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top ease 0.2s;
+
+}
+
+.section1 .button-box > div div span {
+    width: 100%;
+    display: block;
+}
+
+.section1 .button-box > div:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 0 4px #fff inset;
+    -moz-box-shadow: 0 0 0 4px #fff inset;
+    box-shadow: 0 0 0 4px #fff inset;
+}
+
+.section1 .button-box > div:hover div {
+    top: -100%;
+}
+
+.section1 > .content-box > .content h1, .section1 > .content-box > .content p {
+    color: #fff;
+    text-align: center;
+}
+
+.section2 {
+    width: 100%;
+    height: 105px;
+
+    background-color: #f8fbfe;
+}
+
+.section2 .row {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+.section2 .row h1 {
+    margin-top: 25px;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.section2 .row p {
+    font-size: 12px;
+}
+
+.section2 .row .row-div-2 {
+    position: relative;
+}
+
+.section2 .row .row-div-2 > .border-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    width: 100%;
+    height: 40px;
+    margin-top: 38px;
+}
+
+.section3 {
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+}
+
+.section3 h1 {
+    margin-top: 88px;
+}
+
+.section3 .row {
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+.section3 .row .icon-box {
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    margin: 45px auto 20px;
+    position: relative;
+    border-bottom: 1px dashed #ededed;
+}
+
+.section3 .row .iconfont {
+    font-size: 70px;
+    color: #999999;
+}
+
+.section3 .row > div {
+    cursor: pointer;
+}
+
+.section3 .row > div > p {
+    font-size: 22px;
+}
+
+.section3 .row > div:hover .content-p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.section3 .row > div:hover .iconfont {
+    color: #0188fb;
+}
+
+.section3 .row .content-p {
+    font-size: 12px;
+    margin-bottom: 75px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.section3 .row .content-p p {
+    margin: 0;
+    line-height: 21px;
+    text-align: center;
+}
+
+.section4 {
+    overflow: hidden;
+    background-color: #f8fbfe;
+}
+
+.section4 h1 {
+    margin-top: 63px;
+    margin-bottom: 55px;
+}
+
+.section4 .nav {
+    width: 873px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ededed;
+}
+
+.section4 .nav > div {
+    overflow: hidden;
+    height: 40px;
+}
+
+.section4 .nav a {
+    cursor: pointer;
+    font-size: 22px;
+    color: #999999;
+    padding: 5px 5px;
+    line-height: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.section4 .nav a:hover {
+    color: #2175fa;
+    border-bottom: 2px solid #2175fa;
+}
+
+.section4 .nav .active {
+    color: #2175fa;
+    border-bottom: 2px solid #2175fa;
+}
+
+/*.section4 .nav a:focus {*/
+/*color: #2175fa;*/
+/*border-bottom: 2px solid #2175fa;*/
+/*}*/
+.section4 .content {
+    margin: 0 auto;
+    text-align: center;
+    width: 1030px;
+}
+
+.section4 .content .item-content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section4 .content .item-content h2 {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.section4 .content .item-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.section4 .content .item-content .img-box {
+    width: 100%;
+    height: 626px;
+    margin-top: 47px;
+    position: relative;
+}
+
+.section4 .content .item-content .img-box-1 {
+    position: absolute;
+    width: 256px;
+    height: 468px;
+    background-color: #34ce57;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+}
+
+.section4 .content .item-content .img-box-2 {
+    position: absolute;
+    width: 863px;
+    height: 100%;
+    z-index: 1;
+    background-color: #17a2b8;
+    top: 0;
+    right: 0;
+}
+
+.section5 .row {
+    width: 1030px;
+    margin: 0 auto 95px;
+}
+
+.section5 h1 {
+    margin-top: 100px;
+    margin-bottom: 37px;
+}
+
+.section5 .row .iconfont {
+    color: #3b9bee;
+    font-size: 45px;
+}
+
+.section5 .row h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.section5 .row p {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.section5 .row .icon-box {
+    position: relative;
+}
+
+.section5 .row .underline1 {
+    border-top: 1px dashed #2175fa;
+    width: 176px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: -35%;
+}
+
+.section5 .row .underline2 {
+    border-top: 1px dashed #2175fa;
+    width: 176px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    right: -35%;
+}
+
+.section6 {
+    width: 100%;
+}
+
+.section6 .row1, .section6 .row2 {
+    position: relative;
+}
+
+.section6 .row1 .content {
+    position: absolute;
+    width: 100%;
+    height: calc(100%);
+    top: 0;
+    left: 0;
+}
+
+.section6 .row1 .content > div {
+    height: 100%;
+    line-height: 100%;
+}
+
+.section6 .row1 .content > .content-first {
+    text-align: right;
+}
+
+.section6 .row1 .content > .content-first img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+
+.section6 .row1 .content > .content-second {
+    text-align: left;
+    position: relative;
+}
+
+.section6 .row1 .content > .content-second > div > h5 {
+    font-size: 16px;
+}
+
+.section6 .row1 .content > .content-second > div {
+    position: absolute;
+    border-left: 1px solid #fff;
+
+    color: #fff;
+    top: 50%;
+    padding-left: 50px;
+    transform: translateY(-50%);
+}
+
+.section6 .row1 .content > .content-second > div button {
+    font-size: 12px;
+    margin-left: 36px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all 0.2s ease;
+}
+
+.section6 .row1 .content > .content-second > div button:hover {
+    border: 1px solid #1dc5f5;
+    background-color: #fff;
+    color: #1dc5f5;
+}
+
+.section6 .row2 .content {
+    overflow: hidden;
+    width: 100%;
+    height: 564px;
+    background-image: url("../images/section6_02.jpg");
+    background-size: 100% 100%;
+}
+
+.section6 .row2 .content > h1 {
+    margin-top: 80px;
+    margin-bottom: calc(30 / 1920 * 100%);
+    font-size: 36px;
+}
+
+.section6 .row2 .content > p {
+    font-size: 22px;
+    margin-bottom: 45px;
+    color: #666666;
+}
+
+.section6 .row3 {
+    width: 1028px;
+    margin: 0 auto;
+}
+
+.section6 .row3 .bottom {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 15px;
+    color: #999999;
+}
+
+.section6 .row3 .bottom h5 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section6 .row3 .bottom > div {
+    float: left;
+}
+
+.section6 .row3 .bottom p {
+    font-size: 12px;
+    color: #999999;
+}
+
+.section6 .row3 .bottom .left {
+    width: 60px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.section6 .row3 .bottom .right {
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+    padding-left: 22px;
+    border-left: 1px solid #dcdcdc;
+    padding-right: 0;
+}
+
+.section7 {
+    overflow: hidden;
+}
+
+.section7 h1 {
+    font-size: 36px;
+    margin-top: 86px;
+    margin-bottom: 30px;
+}
+
+.section7 p {
+    line-height: 30px;
+    margin: 0;
+    font-size: 22px;
+    color: #666;
+}
+
+.section7 .row {
+    width: 1180px;
+    margin: 57px auto 107px;
+}
+
+.section7 .row .carousel-indicators {
+    bottom: -50px;
+}
+
+/*.section7 .row .carousel-indicators .active {*/
+/*width: 10px;*/
+/*height: 10px;*/
+/*border: 1px solid #7d7d7d;*/
+/*}*/
+.section7 .row .carousel-indicators li {
+    border: 1px solid #c2c2c2;
+}
+
+.section8 {
+    background-color: #f3f7fc;
+    overflow: hidden;
+}
+
+.section8 .row1 {
+    width: 960px;
+    height: 150px;
+    margin: 30px auto;
+    border: 1px solid #dcdcdc;
+}
+
+.section8 .row1 > div {
+    height: 100%;
+}
+
+.section8-middle-div {
+    border-right: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+}
+
+.section8 h1 {
+    font-size: 36px;
+    margin-top: 72px;
+    margin-bottom: 30px;
+}
+
+.section8 p {
+    line-height: 30px;
+    margin: 0;
+    font-size: 22px;
+    color: #666;
+}
+
+.section8 .padding-box {
+    margin: 34px auto 0;
+}
+
+.section8 .icon-box {
+    margin-top: 10px;
+    width: 43px;
+    height: 43px;
+    float: left;
+
+    line-height: 43px;
+    border-radius: 50%;
+    border: 1px solid #dcdddd;
+}
+
+.section8 .content-box {
+    margin-left: 17px;
+    float: left;
+}
+
+.content-box h5 {
+    font-size: 14px;
+    color: #888888;
+    text-align: left;
+}
+
+.content-box p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: #444444;
+}
+
+.section8 .icon-box .iconfont {
+    font-size: 24px;
+}
+
+.section8 .padding-box {
+    width: 220px;
+    height: 80px;
+}
+
+.section8 .row2 {
+    width: 960px;
+    margin: 10px auto 20px;
+    text-align: left;
+}
+
+.section8 .row2 > div {
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.section8 .row2 > div > div {
+    padding-left: 0;
+
+    color: #888888;
+    font-size: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.section8 .row2 > div input {
+    border: none;
+    background-color: transparent;
+    width: calc(100% - 60px);
+}
+
+.section8 .row2 > div input:focus, .section8 .row3 > div input:focus {
+    border: none;
+    outline: none;
+}
+
+.section8 .row3 {
+    width: 960px;
+    margin: 0 auto 80px;
+    text-align: left;
+}
+
+.section8 .row3 > div {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    color: #888888;
+    font-size: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.section8 .row3 > div input {
+    border: none;
+    background-color: transparent;
+    width: calc(100% - 60px);
+}
+
+.section9 {
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+    background-color: #237efd;
+    color: #fff;
+}
+
+.section9 .img-box {
+    display: inline-block;
+    margin-top: 26px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+}
+
+.section9 .nav {
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+.section9 .nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1366px) {
+    .section1 > .content-box > .content {
+        right: 54%;
+        top: 27%;
+    }
+
+    .section1 > .content-box > .content h1 {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+    .section1 > .content-box > .content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .section2 .row {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .section7 .row {
+        width: 100%;
+    }
+}
